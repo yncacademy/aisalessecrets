@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Sales Secrets — Sifu Yik Chan</title>
+<meta name="description" content="AI Sales Secrets — 100 Questions That Turn AI into Real Money. A book by Sifu Yik Chan: dialogue-driven answers, ready-to-copy AI prompts, and Money Secrets for every sales situation.">
+<meta property="og:title" content="AI Sales Secrets — Sifu Yik Chan">
+<meta property="og:description" content="100 Questions That Turn AI into Real Money. Dialogue-driven answers, copy-ready prompts, and Money Secrets in every chapter.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='3' y='3' width='58' height='58' rx='12' fill='%231c1a17'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='26' font-weight='bold' fill='%23f0e7d8' text-anchor='middle'%3ESY%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="brand" href="#/">
+    <span class="seal" aria-hidden="true">SY</span>
+    <span class="brand-text"><strong>Sifu Yik</strong><small>AI Sales Secrets</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="#/" data-nav="home">Home</a>
+    <a href="#/contents" data-nav="contents">Contents</a>
+    <a href="#/search" data-nav="search">Search</a>
+    <a href="#/afterword" data-nav="afterword">Afterword</a>
+  </nav>
+  <a class="progress-chip" id="progress-chip" href="#/contents" title="Your reading progress">
+    <span class="progress-chip-bar" aria-hidden="true"><span id="progress-chip-fill"></span></span>
+    <span id="progress-chip-text">0 / 100</span>
+  </a>
+</header>
+
+<div class="read-bar" id="read-bar" aria-hidden="true"><span id="read-bar-fill"></span></div>
+
+<main id="main">
+
+  <!-- ============ HOME ============ -->
+  <section class="view" data-view="home" hidden>
+    <div class="hero" id="home-hero"><!-- JS --></div>
+    <div class="wrap">
+      <div class="stats-strip" id="home-stats" aria-label="Book statistics"><!-- JS --></div>
+
+      <div class="section-head">
+        <p class="eyebrow">The journey</p>
+        <h2>Five parts, one road to real money</h2>
+        <p class="section-sub">The book walks from mindset to tools in five movements. Your progress is saved on this device as you read.</p>
+      </div>
+      <div class="part-grid" id="home-parts"><!-- JS --></div>
+
+      <div class="how-strip">
+        <div class="how-item">
+          <span class="how-num">01</span>
+          <h3>Read the dialogue</h3>
+          <p>Every question is a real coaching conversation between a salesperson and Sifu Yik — problems you know, answers that reframe them.</p>
+        </div>
+        <div class="how-item">
+          <span class="how-num">02</span>
+          <h3>Copy the prompts</h3>
+          <p>257 ready-to-use AI prompts are embedded throughout the book. Every one has a copy button — paste it straight into ChatGPT, Claude, or Gemini.</p>
+        </div>
+        <div class="how-item">
+          <span class="how-num">03</span>
+          <h3>Apply the Money Secrets</h3>
+          <p>Each chapter closes with the Money Secrets box — the distilled rules worth remembering when the pressure is on.</p>
+        </div>
+      </div>
+
+      <div class="home-cta">
+        <h2>One question a day changes the year.</h2>
+        <p>Start anywhere — every question stands on its own.</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#/q/1">Start with Question 1</a>
+          <button class="btn btn-ghost" id="home-random" type="button">Surprise me</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTENTS ============ -->
+  <section class="view" data-view="contents" hidden>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Every question, in order</p>
+        <h1>Contents</h1>
+        <p class="section-sub">Filter by keyword, tap any question to read. Your progress is saved automatically.</p>
+      </div>
+
+      <div class="contents-progress" id="contents-progress"><!-- JS --></div>
+
+      <div class="search-wrap">
+        <label class="visually-hidden" for="toc-filter">Filter questions</label>
+        <input type="search" id="toc-filter" placeholder="Filter questions by keyword…  ( / )" autocomplete="off">
+      </div>
+
+      <div id="contents-list"><!-- JS --></div>
+      <div class="empty-state" id="contents-empty" hidden>
+        <p class="empty-glyph">〰</p>
+        <h2>No questions match</h2>
+        <p>Try a different keyword.</p>
+        <button class="btn btn-ghost" id="contents-clear" type="button">Clear filter</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ READER ============ -->
+  <section class="view" data-view="reader" hidden>
+    <div class="wrap wrap-narrow" id="reader"><!-- JS --></div>
+  </section>
+
+  <!-- ============ SEARCH ============ -->
+  <section class="view" data-view="search" hidden>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Find your situation</p>
+        <h1>Search the book</h1>
+        <p class="section-sub">Search across all 100 questions — dialogue, prompts, and Money Secrets included.</p>
+      </div>
+      <div class="search-wrap">
+        <label class="visually-hidden" for="site-search">Search the book</label>
+        <input type="search" id="site-search" placeholder="e.g. objection, cold email, livestream, price…  ( / )" autocomplete="off">
+      </div>
+      <p class="result-count" id="search-count" role="status" aria-live="polite"></p>
+      <div class="search-results" id="search-results"><!-- JS --></div>
+      <div class="empty-state" id="search-empty" hidden>
+        <p class="empty-glyph">〰</p>
+        <h2>Nothing found</h2>
+        <p>Try a shorter keyword — “email”, “price”, “livestream”.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AFTERWORD ============ -->
+  <section class="view" data-view="afterword" hidden>
+    <div class="wrap wrap-narrow">
+      <div class="section-head">
+        <p class="eyebrow">Before you close the book</p>
+        <h1>Afterword</h1>
+      </div>
+      <div class="afterword-body" id="afterword-body"><!-- JS --></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="seal seal-small" aria-hidden="true">SY</span>
+      <div><strong>AI Sales Secrets</strong><br><small>100 Questions That Turn AI into Real Money — by Sifu Yik Chan.</small></div>
+    </div>
+    <p class="footer-note">Reading progress, marks, and preferences live only in this browser. Prompts are meant to be adapted — the book teaches you how to ask.</p>
+    <p class="footer-meta" id="footer-meta"><!-- JS --></p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="data/book.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
